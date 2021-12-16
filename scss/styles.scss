@@ -40,9 +40,8 @@ body {
     font-size: $default-font-size;
     background-image: url("../images/pattern-background-desktop.svg");
     background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
     background-color: $primary-color;
+    background-size: 100% 70%;
     
 }
 
@@ -168,6 +167,7 @@ body {
         background-image: url("../images/pattern-background-mobile.svg");
         overflow:scroll;
         width: 480px;
+        background-size: auto 60%;
         
     }
 
