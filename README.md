@@ -56,7 +56,7 @@ Users should be able to:
 
 ### What I learned
 
-- Apparatenly when the size(height) of a flexbox element is not set and you place padding on a child element that preceeds an image sibling or a sibling with an image as a child
+- Apparatenly when the size(height) of a flexbox element is not set and you place padding on a child element that precedes an image sibling or a sibling with an image as a child
 The way the image is rendered gets distorted. so It is best to add padding or margins on the image or image container directly. VERY SUPRISING.
 
 
