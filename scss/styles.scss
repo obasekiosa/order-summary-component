@@ -118,6 +118,8 @@ body {
                 &:hover {
                     opacity: 0.7;
                     cursor: pointer;
+                    transition-property: opacity;
+                    transition-duration: 0.4s;
                 }
             }
         }
@@ -141,6 +143,8 @@ body {
             &:hover {
                 opacity: 0.7;
                 cursor: pointer;
+                transition-property: opacity;
+                transition-duration: 0.4s;
             }
         }
 
@@ -152,6 +156,8 @@ body {
             &:hover {
                 color: $dark-blue;
                 cursor: pointer;
+                transition-property: color;
+                transition-duration: 0.4s;
             }
         }
     }

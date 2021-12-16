@@ -77,6 +77,8 @@ body {
 .card__order-summary .order-info .subscription-info .button__change:hover {
   opacity: 0.7;
   cursor: pointer;
+  transition-property: opacity;
+  transition-duration: 0.4s;
 }
 .card__order-summary .order-info button {
   width: 100%;
@@ -95,6 +97,8 @@ body {
 .card__order-summary .order-info .button__proceed:hover {
   opacity: 0.7;
   cursor: pointer;
+  transition-property: opacity;
+  transition-duration: 0.4s;
 }
 .card__order-summary .order-info .button__cancel {
   color: #7280a7;
@@ -104,6 +108,8 @@ body {
 .card__order-summary .order-info .button__cancel:hover {
   color: #1f2f56;
   cursor: pointer;
+  transition-property: color;
+  transition-duration: 0.4s;
 }
 
 @media screen and (max-width: 480px) {
