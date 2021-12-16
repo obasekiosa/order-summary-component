@@ -1,0 +1,172 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+$mobile-width: 375px;
+$desktop-width: 1440px;
+$default-font: 'Red Hat Display', sans-serif;
+$default-font-size: 16px;
+
+// Primary color
+$primary-color: hsl(225, 100%, 94%);
+$primary-color-alpha: hsl(225, 100%, 94%, 0.5);
+
+// Secondary Colors
+$seconday-color: hsl(245, 75%, 52%);
+
+$very-pale-blue: hsl(225, 100%, 98%);
+$desaturated-blue: hsl(224, 23%, 55%);
+$dark-blue: hsl(223, 47%, 23%);
+
+// sizing
+$order-info-height: 400px;
+
+// spacing
+$order-info-padding: 40px 40px 10px 40px;
+$order-info-top-margin: 8px;
+$subscription-padding: 16px;
+$items-margin-bottom:24px;
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+    // border: 2px dotted red;
+}
+
+body {
+    font-family: $default-font;
+    font-size: $default-font-size;
+    background-image: url("../images/pattern-background-desktop.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: $primary-color;
+    
+}
+
+.container {
+    padding-top: 20vh;
+    margin-bottom: 50px;
+}
+
+
+.card__order-summary {
+    margin: auto;
+    max-width: 400px;
+    text-align: center;
+    background-color: $very-pale-blue;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0px 5px 10px 1px $desaturated-blue;
+
+    .image__hero {
+        display: block;
+        width: 100%;
+    }
+
+    .order-info {
+        margin-top: $order-info-top-margin;
+        padding: $order-info-padding;
+        display: flex;
+        flex-direction: column;
+        color: $desaturated-blue;
+
+        h2 {
+            color: $dark-blue;
+            font-weight: 900;
+            margin-bottom: 20px;
+        }
+
+        
+
+        .subscription-info {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            background-color: $primary-color-alpha;
+            border-radius: 10px;
+            padding: $subscription-padding;
+            margin-bottom: $items-margin-bottom;
+            margin-top: $items-margin-bottom;
+
+            .plan {
+                display: flex;
+                flex-direction: row;
+                
+                .plan-info {
+                    margin-left: 8px;
+
+                    h4 {
+                        margin-bottom: 4px;
+                        color: $dark-blue;
+                        font-weight: 900;
+                    }
+
+                    
+                }
+            }
+
+            .button__change {
+                text-decoration: underline;
+                color: $seconday-color;
+                font-weight: 900;
+                font-size: 12px;
+
+                &:hover {
+                    opacity: 0.7;
+                    cursor: pointer;
+                }
+            }
+        }
+
+        button {
+            
+            width: 100%;
+            font-weight: 900;
+            font-size: 12px;
+            border: none;
+        }
+
+        .button__proceed {
+            padding: 14px;
+            color: $very-pale-blue;
+            background-color: $seconday-color;
+            border-radius: 10px;
+            margin-bottom: $items-margin-bottom;
+            box-shadow: 0px 20px 10px 2px $primary-color;
+
+            &:hover {
+                opacity: 0.7;
+                cursor: pointer;
+            }
+        }
+
+        .button__cancel {
+            color: $desaturated-blue;
+            background-color: transparent;
+            margin-bottom: $items-margin-bottom;
+
+            &:hover {
+                color: $dark-blue;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: calc(480px)) {
+    body {
+        background-image: url("../images/pattern-background-mobile.svg");
+        overflow:scroll;
+        width: 480px;
+        
+    }
+
+    .card__order-summary {
+        max-width: 325px
+    }
+}
+
